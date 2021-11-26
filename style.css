@@ -58,7 +58,35 @@ form button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 }
 .todo li{
     flex: 1;
+}
+.trash-btn,
+.complete-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.complete-btn{
+    background: rgb(73, 204, 73);
+} 
+.todo-item{
+    padding: 0 8px;
+}
+.fa-trash,
+.facheck{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(128px)rotateZ(20deg);
+    opacity: 0;
 }
